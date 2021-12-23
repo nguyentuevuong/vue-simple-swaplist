@@ -10,7 +10,7 @@ import SwapList from "./components/swaplist.vue";
 const randomId = () => Math.random().toString(36).slice(2, 12);
 
 const mockData = () =>
-  [...Array(100).keys()].map(({}, index) => ({
+  [...Array(150).keys()].map(({}, index) => ({
     state: index < 45 ? "left" : "right",
     id: randomId(),
     title: `Options ${index}`,
